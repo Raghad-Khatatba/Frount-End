@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rock-paper-scissors.css">
+    <title>rock-paper-scissors game </title>
+   <!---<script src="rock-paper-scissors-js.js"> </script>-->
+</head>
+<body >
+  
+    <header>   
+            <ul>
+                <li>Rock</li>
+                <li>Paper</li>
+                <li>Scissors</li>
+            </ul>
+    <div class="Score-container">
+        <h4>SCORE</h4>
+        <span id="score">0</span>
+    </div> 
+</header>
+    
+    
+   <main id="main"> 
+     <button class="paper"  id="btn-paper"><span class="wrapper2"><img src="./images/icon-paper.svg" alt="paper icon"class="paper1"></span></button>
+     <button class="scissor" id="btn-scissor"><span class="wrapper3"><img src="./images/icon-scissors.svg" alt="scissors icon"class="scissor1"></span></button>
+     <button class="rock" id='btn-rock'><span class="wrapper1"><img src="./images/icon-rock.svg" alt="rock icon"class="rock1"></span></button>
+    </main>
+    <!--bottun to get back to the Previous page -->
+    <button id="Prev">
+        <ul class="GetBack">
+            <li class="prev"><span></span></li>
+        </ul>
+           </button>
+    <!--sound button -->
+    <button class="soundbutton" id="Play">  </button>
+
+   <div class="bigger-container"id="biggercontainer">
+      <div class="user-hand">
+           <h1>YOU PICKED</h1>
+           <div class="selected_image"id="selected_image">
+           <div id="Effect1"><img id="userimage" src="" alt="selected_image"></div>
+           </div>
+      </div>
+      <div class="result">
+        <div class="finalresult"><h1  id="finalresult"></h1></div>
+         <button class="newgame">PLAY AGAIN</button>
+      </div>
+      <div class="computer-hand">
+          <h1>THE HOUSE PICKED</h1>
+          <div class="random_image"id="random_image">
+            <div id="Effect2"><img id="coputerimage"src="" alt="random_image"></div>
+          </div>
+      </div>
+    </div>
+    <script src="rock-paper-scissors.js"> </script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+/*
+ *Rock Paper Scissors game !
+ * Provides styles to the Rock Paper Scissors game.
+ */
+ body {
+    background-image: url("images/backGround.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    margin: 0;
+    height: 100vh;
+}
+#title-of-game{
+    color: white;
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Open Sans';
+    font-style: italic;
+    text-shadow: #570294 4px 6px 16px;
+    margin-top: 4%;
+    height: 5%;
+}
+#firstbutton{
+    margin-top: 0.7%;
+}
+#container .but1,.but2,.but3{
+    height: 80px;
+    width: 350px;
+    background-color: #2e004d;
+    color: #f6e8ff;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 39px;
+    font-family: 'Open Sans';
+    font-style: italic;
+    text-shadow: rgb(112, 5, 155) 2px 4px 12px;
+    border-radius: 1em;
+    border: none;
+    margin-left: 36%;
+    margin-right: 35%;
+    margin-bottom:1.5%;
+    cursor: pointer;
+    box-shadow: 0 9px rgb(39, 2, 63);
+}
+button:hover{
+    opacity: 0.8;
+}
+#container button:active {
+    background-color: #2e004d;
+    box-shadow: 0 3px rgb(57, 3, 73);
+    transform: translateY(4px);
+  }
+#container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.soundbutton{
+    background-image: url("images/sound2.jpg");
+    background-position: center;
+    height: 90px;
+    width: 90px;
+    background-size: cover;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    box-shadow: 0 9px rgb(39, 2, 63);
+    position: absolute;
+    right:    20px;
+    bottom:   22px;
+}
+.soundbutton2{
+    background-image: url("images/sound.jpg");
+    background-position: center;
+    height: 90px;
+    width: 90px;
+    background-size: cover;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    box-shadow: 0 9px rgb(39, 2, 63);
+    position: absolute;
+    right:    20px;
+    bottom:   22px;
+}
+
+/* For small devices (phones, 600px and down) */
+@media only screen and (max-device-width: 600px) {
+    .but {
+      
+      min-height: 180px;
+      min-width: 410px;
+      margin: 9%;
+    }
+    .soundbutton{
+        min-height: 100px;
+        min-width: 100px;
+        bottom:   40px;
+    }
+    #title-of-game{
+        margin-top: 15%;
+    }
+    #firstbutton{
+        margin-top: 12%;
+    }
+  }
+/* responsive in all devices */
+  @media (max-width:768px) {
+    .but {
+      
+        min-height: 180px;
+        min-width: 410px;
+        margin: 4%;
+      }
+           #title-of-game{
+        margin-top: 7%;
+    }
+  }
+  @media (width:320px){
+    #container .but1,.but2,.but3{
+        min-height: 60px;
+        min-width: 200px;
+        margin-bottom: 4%;
+      }
+    #title-of-game{
+        margin-top: 5%;
+        font-size: 40px;
+    }
+    #firstbutton{
+        margin-top: 8%;
+    }
+    .soundbutton{
+        height: 55px;
+        width: 55px;
+        bottom:   18px;
+    }
+  }
+  @media (width:375px){
+    #container .but1,.but2,.but3{
+        min-height: 60px;
+        min-width: 200px;
+        margin-bottom: 4%;
+      }
+      #title-of-game{
+        margin-top: 5%;
+        font-size: 40px;
+    }
+    #firstbutton{
+        margin-top: 8%;
+    }
+    .soundbutton{
+        height: 70px;
+        width: 70px;
+        bottom:   18px;
+    }
+  }
+  @media (width:425px){
+    #container .but1,.but2,.but3{
+        min-height: 60px;
+        min-width: 200px;
+        margin-bottom: 4%;
+      }
+      #title-of-game{
+        margin-top: 5%;
+        font-size: 45px;
+    }
+    #firstbutton{
+        margin-top: 8%;
+    }
+    .soundbutton{
+        height: 80px;
+        width: 80px;
+        bottom:   18px;
+    }
+  }
+  @media (width:1024px){
+    #container .but1,.but2,.but3{
+        min-height: 90px;
+        min-width: 250px;
+        margin-bottom: 2%;
+      }
+      #title-of-game{
+        margin-top: 4%;
+        font-size: 60px;
+    }
+    #firstbutton{
+        margin-top: 0%;
+    }
+    .soundbutton{
+        min-height: 30px;
+        min-width: 30px;
+        bottom:   18px;
+    }
+  }
+ 

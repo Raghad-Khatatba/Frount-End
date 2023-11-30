@@ -1,0 +1,111 @@
+.rule-points-div, .address-Of-Box, .address-Of-Box h1, .address-Of-Box button, .image-rules , .image-rules img, .li-points, .span-close , #rule1-bigDiv{
+    box-sizing: content-box;
+    padding: 7px;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+#Big-contener{
+    background: radial-gradient(circle at top, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    padding: 70px;
+    height: 100%;
+    margin: -8px;
+}
+.rule-points-div{
+    font-size: 2em;
+    text-shadow: black 2px 4px 12px;
+}
+.address-Of-Box{
+    margin: 0;
+    padding: 10px 25px;
+}
+.address-Of-Box h1{
+    color: white;
+    font-family:Roboto, Helvetica;
+    display: flex;
+    font-size: 2em;
+    align-items: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    justify-content: initial;
+}
+.address-Of-Box button{
+    background-color: rgba(0, 0, 0, 0.14);
+    width: 1.7em;
+    height: 1.7em;
+    display: flex;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(234, 15%, 74%);
+    margin-left: auto;
+    margin-right: -12px;
+    cursor: pointer;
+}
+.image-rules{
+    width: 70%;
+    margin-left: 25%;
+}
+.image-rules img{
+    width: 50%;
+}
+.li-points{
+    list-style-type: circle;
+    font-size: 1em;
+    text-align: left;
+    align-items: left;
+}
+.span-close{
+    flex: 0 0 auto;
+    color: rgba(0, 0, 0, 0.54);
+    padding: 12px;
+    overflow: visible;
+    font-size: 1.5rem;
+    border-radius: 50%;
+}
+
+#rule1-bigDiv {
+    box-sizing: content-box;
+    width: 70%;
+    border: 1px solid black;
+    color: white;
+    background-color:  #551c55;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: black 4px 8px 15px;
+    border-radius: 50px;
+    box-shadow: 1px 10px 20px -10px rgb(0 0 0), 2px 24px 50px 7px rgb(0 0 0 / 80%), 15px 15px 98px 25px rgb(1 1 1 / 20%);
+}
+/* responsive in all devices */
+/*Nama' Salameh */
+@media (width:320px){
+    #rule1-bigDiv{
+        width: 110%;
+        font-size: 12px;
+    }   
+    .image-rules{
+        width: 250px;
+        margin-left: 0%;
+    }
+}
+@media (width:375px){
+    #rule1-bigDiv{
+        width: 80%;
+        font-size: 12px;
+    }   
+    .image-rules{
+        width: 250px;
+        margin-left: 0%;
+    }
+}
+@media (width:425px){
+    #rule1-bigDiv{
+        width: 70%;
+        font-size: 10px;
+    }  
+    .image-rules{
+        width: 250px;
+        margin-left: 0%;
+    } 
+}

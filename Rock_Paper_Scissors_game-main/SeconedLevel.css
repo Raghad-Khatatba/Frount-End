@@ -1,0 +1,766 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+
+*{
+box-sizing: border-box;
+
+
+}
+body{
+  font-family: ' Barlow Semi Condensed', sans-serif;
+  background: radial-gradient(circle at top, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+ height: 100vh;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+  color: #fff;
+width: 100%;
+margin: 0px;
+}
+
+header{
+  width: 700px;
+  max-width: 100%;
+  height: 150px;
+  border: 3px solid hsl(217,16%,45%);
+  border-radius: 15px;
+  display:flex ;
+  align-items: center;
+  justify-content: space-between;
+  margin:50px 0;
+  
+
+}
+header ul {
+  padding-left: 25px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  list-style-type: none;
+    font-size: 30px;
+    line-height: 0.8;
+    letter-spacing: 0px;
+    text-transform:uppercase ;
+    margin: 12px ;
+    
+}
+.Score-container{
+  
+  width: 150px;
+  height: 120px;
+  margin-top: 12px;
+  margin-right: 20px;
+background-color:#fff ;
+border: 1px solid black ;
+border-radius: 8px;
+display: flex;
+flex-direction: column; /*gives it a top to bottom section*/
+justify-content: center;
+align-items: center;
+}
+h4{
+  font-size: 17px;
+  margin: 1px 0 0;
+  padding-top: 100px;
+  color: hsl(229,64%,46%);
+}
+.Score-container span {
+  
+  color: hsl(229,25%,31%);
+  font-size: 50px;
+  font-weight: 700;
+  margin: 2px 0 0;
+  padding-bottom: 90px;
+}
+
+main{
+  position: relative;
+
+height: 450px;
+width: 500px;
+display: flex;
+justify-content: center;
+bottom:32px;
+
+
+
+}
+main::before{
+  background-image:url(./images/bg-pentagon.svg);
+  content:'';
+  background-size:cover;
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  background-size:cover;
+  position: absolute;
+  width: 320px;
+  height: 310px;
+  max-width: 100%;
+  max-height: 100%;
+ 
+ 
+}
+.btn-hand:focus{
+  
+  outline: none;
+
+
+}
+.btn-hand:active{
+  transform: scale(0.9);
+}
+
+.btn-hand{
+  position: relative;
+ border: none;
+border-radius:50% ;
+height: 110px;
+width: 110px;
+box-shadow: inset ; /*shadow from the inside */
+box-shadow: inset 0 -6px rgba(0,0,0,0.25) ; /*shadow from the inside */
+margin:0 40px;
+cursor: pointer;
+
+}
+
+#btn-paper{
+  position: absolute;
+background: linear-gradient(to bottom ,hsl(230,89%,62%), hsl(230,89%,65%));
+top: 115px;
+left: 290px;
+}
+#btn-rock{
+  position: absolute;
+  background: linear-gradient(to bottom ,hsl(349,71%,52%), hsl(349,70%,56%));
+  right: 60px;
+  bottom: 0px;
+
+
+  
+}
+#btn-scissors{
+  position: absolute;
+  background: linear-gradient(to bottom ,hsl(39,89%,49%), hsl(40,84%,53%));
+
+left:150px;
+
+  
+}
+#btn-lizard{
+    position: absolute;
+    background: #994DE6;
+    bottom: 0px;
+    left: 55px;
+  
+    
+  }
+  #btn-spock{
+    position: absolute;
+    background: #2CEBC8;   
+    top: 120px;
+    right: 300px;
+  
+    
+  }
+
+  .btn-paper{
+   
+  background: linear-gradient(to bottom ,hsl(230,89%,62%), hsl(230,89%,65%));
+
+  }
+  .btn-rock{
+  
+    background: linear-gradient(to bottom ,hsl(349,71%,52%), hsl(349,70%,56%));
+   
+  
+    
+  }
+  .btn-scissors{
+    
+    background: linear-gradient(to bottom ,hsl(39,89%,49%), hsl(40,84%,53%));
+    top: 5px;
+ 
+    
+  }
+  .btn-lizard{
+     
+      background: #994DE6;
+    
+      
+    }
+    .btn-spock{
+    
+      background: #2CEBC8;   
+    
+    
+      
+    }
+
+
+.btn-hand .wrapper{
+background-color:#fff ;
+border-radius: 50%;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+height: 80px;
+width: 80px;
+box-shadow: inset 0 6px rgba(0,0,0,0.25) ; /*shadow from the inside */
+}
+
+/*the style of the button rules */
+
+
+/*.btn-rules{
+border: 1px solid #fff;
+border-radius: 12px;
+background-color:transparent ;
+color:#fff;
+font-size: 20px;
+font-family: inherit;
+padding:10px 25px;
+position: absolute;
+bottom: 30px;
+right:30px;
+letter-spacing: 2px;
+text-transform: uppercase;
+cursor: pointer;
+}*/
+
+
+/*GET BACK BUTTON style*/
+
+#Prev{
+  border: 1px solid #fff;
+  position: absolute;
+  width:130px;
+  height: 47px;
+  max-width: 100%;
+  border-radius: 12px;
+  bottom: 30px;
+  left:30px;
+  margin-bottom: 30px;
+  margin-left: 25px;
+  background-color:transparent ;
+  
+}
+.GetBack{
+  position: absolute;
+  width:130px;
+  height: 47px;
+  background-color:transparent ;
+  transform:translate(-50%,-50%);
+  margin-top: 0%;
+  left: 40px;
+  cursor: pointer;
+ border-radius: 20px;
+
+}
+.GetBack li{
+  list-style: none;
+  width:130px;
+  height: 47px;
+  
+border-radius: 20px;
+  margin: 0 0px;
+ 
+  transition: .8s;
+}
+.GetBack li:hover{
+  background-color:transparent ;
+}
+.GetBack li span{
+  position: absolute;
+  width: 20px;
+  height:20px ;
+  
+  border: 4px solid #fff;
+  transition: .5s;
+
+}
+.GetBack li.prev span{
+  top: 50%;
+  left: 80%;
+  transform: translateY(-50%)rotate(-45deg);
+  border-right: none;
+  border-bottom: none;
+  
+
+}
+.GetBack li.prev:hover span{
+ left: 40%;
+  
+
+}
+.GetBack li.prev span:before{
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  background: #fff;
+  transform-origin:left ;
+  transform: rotate(45deg)translate(-10px,4px)scaleX(1);
+  transition:.5s ;
+  
+
+}
+.GetBack li.prev:hover span:before{
+  transform: rotate(45deg)translate(-10px,4px)scaleX(1);
+
+}
+
+
+
+/* Play again button */
+
+.restart{
+
+  border: 1px solid #fff;
+  border-radius: 12px;
+  background-color: #fff;
+  font-size: 20px;
+  font-family: inherit;
+  padding:10px 25px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.16s;
+  color:red;
+
+}
+.restart:hover{
+    background-color: rgb(245, 205, 245);
+    transform: translate3d(0px,-4px,0px);
+}
+
+.maintain{
+
+ width: 600px;
+max-width: 100%;
+margin: 0 auto;
+display:none;
+justify-content: space-between;
+align-items: center;
+text-align: center;
+
+
+
+}
+.maintain.btn-hand{
+ transform: scale(1.4);
+  
+  
+  
+  
+  }
+.color{
+position: relative;
+
+
+
+
+
+}
+.maintain{
+  width: 900px;
+  margin-top: 50px;
+  display: none;
+}
+
+.maintain h1{
+
+color:white;
+font-size: 30px;
+margin-top: 10px;
+
+text-align: center;
+
+}
+.pc-hand .btn-hand img{
+ 
+  height: 120px;
+  width: 110px;
+  margin:0 40px;
+  
+  }
+.pc-hand .btn-hand{
+
+height: 204px;
+width: 209px;
+margin:0 40px;
+
+}
+.pc-hand  .btn-hand .wrapper{
+
+height: 160px;
+width: 160px;
+
+
+
+}
+
+.user-hand .btn-hand img{
+
+  height: 120px;
+  width: 110px;
+  margin:0 40px;
+  
+  
+  }
+.user-hand .btn-hand{
+
+height: 204px;
+width: 209px;
+margin:0 40px;
+}
+.user-hand  .btn-hand .wrapper{
+height: 160px;
+width: 160px;
+
+
+
+
+}
+
+@media (max-width:800px) {
+ 
+  .GetBack li.prev:hover span{
+    left: 25%;
+   }
+
+   main{
+   
+  bottom: 38px;
+  height: 300px;
+  width: 300px;
+  }
+  .btn-hand img{
+ 
+    height: 35px;
+    width: 80px;
+    margin:0 40px;
+    
+    }
+.btn-hand{
+ 
+height: 80px;
+width: 80px;
+margin:0 40px;
+
+}
+.btn-hand .wrapper{
+ 
+  height:60px;
+  width: 60px;
+
+
+
+  }
+  #btn-paper{
+
+  left:160px;
+  top: 90px;
+  }
+  #btn-rock{
+
+ right:0px;
+  bottom: 15px;
+  
+  
+    
+  }
+
+
+#btn-scissors{
+    
+ top:10px;
+  left: 76px;
+  
+  
+  
+    
+  }
+  #btn-lizard{
+    
+    bottom:15px;
+    left:15px;
+    
+      
+    }
+    #btn-spock{
+    
+        top:95px;
+        right: 150px;
+        
+          
+        }
+  main::before{
+    top: 18%;
+    width: 70%;
+    height: 70%;
+    left: 12%;
+    
+   
+  }
+  .Score-container{
+  
+    width: 90x;
+    height: 90px;
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+ 
+  }
+  main::before{
+    background-image:url(./images/bg-pentagon.svg);
+    content:'';
+    background-size:cover;
+    position: absolute;
+    
+    background-size:cover;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+   left:50px;
+   
+   
+  }
+  .maintain{
+    position: relative;
+        width: 400px;
+        height: 350px;
+        display: none;
+        bottom: 30px;
+        
+    }
+   
+    .maintain h1{
+      color:white;
+      font-size: 15px;
+      margin-top: 0px;
+    
+      text-align: center;
+    }
+
+   
+ /*   .bigger-container .selected_image{
+        display: flex;
+        justify-content: center;
+    }*/
+   
+.user-hand{
+
+  position: absolute;
+  
+  bottom: 160px;
+
+
+}
+.user-hand h1{
+margin-top: 12px;
+}
+.play-again{
+
+  position: absolute;
+  left: 100px;
+  bottom: 20px;
+
+
+}
+   .pc-hand{
+
+    position: absolute;
+    right: 0px;
+    bottom: 157px;
+
+   } 
+   .pc-hand h2{
+     margin-top: 12px;
+    font-size: 15px;
+
+
+   }
+  
+   .pc-hand .btn-hand img{
+ 
+    height: 45px;
+    width: 80px;
+    margin:0 40px;
+    
+    }
+  .pc-hand .btn-hand{
+  
+  height: 110px;
+  width: 110px;
+  margin:0 40px;
+  
+  }
+  .pc-hand  .btn-hand .wrapper{
+  
+  height: 80px;
+  width: 80px;
+  
+  
+  
+  }
+  
+  .user-hand .btn-hand img{
+  
+    height: 45px;
+    width: 45px;
+    margin:0 40px;
+    
+    
+    }
+  .user-hand .btn-hand{
+  
+  height: 110px;
+  width: 110px;
+  margin:0 40px;
+  }
+  .user-hand  .btn-hand .wrapper{
+  height: 80px;
+  width: 80px;
+  
+  
+  
+  
+  }
+  
+}
+
+@media (width:320px){
+
+/*.btn-rules{
+   
+    bottom: 30px;
+    right:10px;
+  ;*/
+  
+    .play-again{
+
+      position: absolute;
+      left: 70px;
+      bottom: 25px;
+    
+    
+    }
+    }
+    #Prev{
+      bottom: 0px;
+      left:10px;
+     
+
+
+    }
+    @media (width:1024px){
+
+
+
+      #btn-rock{
+
+     
+        top: 300px;
+         
+         
+           
+         }
+
+         #btn-lizard{
+    
+          top:300px;
+        
+          
+            
+          }
+          #btn-paper{
+
+            top: 130px;
+            }
+            #btn-scissors{
+    
+              top:10px;
+               }
+               #btn-spock{
+    
+                top:129px;
+              
+                
+                  
+                }
+               
+                 .pc-hand .btn-hand img{
+ 
+                    height: 120px;
+                    width: 110px;
+                    margin:0 40px;
+                    
+                    }
+                .pc-hand .btn-hand{
+                 
+                height: 204px;
+                width: 209px;
+                margin:0 40px;
+                
+                }
+                .pc-hand  .btn-hand .wrapper{
+                 
+                  height: 160px;
+                  width: 160px;
+                
+                
+                
+                  }
+
+                  .user-hand .btn-hand img{
+ 
+                    height: 120px;
+                    width: 110px;
+                    margin:0 40px;
+                    
+                    
+                    }
+                .user-hand .btn-hand{
+                 
+                  height: 204px;
+                  width: 209px;
+                  margin:0 40px;
+                }
+                .user-hand  .btn-hand .wrapper{
+                  height: 160px;
+                  width: 160px;
+                
+                
+                
+                
+                  }
+                }
+                .soundbutton{
+    background-image: url("images/sound2.jpg");
+    background-position: center;
+    height: 90px;
+    width: 90px;
+    background-size: cover;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    box-shadow: 0 9px rgb(39, 2, 63);
+    position: absolute;
+    right:    20px;
+    bottom:   22px;
+}
+.soundbutton2{
+    background-image: url("images/sound.jpg");
+    background-position: center;
+    height: 90px;
+    width: 90px;
+    background-size: cover;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    box-shadow: 0 9px rgb(39, 2, 63);
+    position: absolute;
+    right:    20px;
+    bottom:   22px;
+}
+
+    

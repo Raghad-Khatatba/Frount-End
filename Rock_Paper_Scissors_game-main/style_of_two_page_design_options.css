@@ -1,0 +1,494 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+
+/* Variables */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background: radial-gradient(circle at top, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  height: 100vh;
+  width:100%;
+  text-transform: uppercase;
+  display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+.LevelOne-Rules{
+  /*border: 4px solid #d1a0f1;*/
+border-radius :45px;
+width: 570px;
+max-width: 100%;
+height:  180px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 25px;
+margin-top: 4.5%;
+cursor: pointer;
+/*background: radial-gradient(134.34% 134.34% at 50% 0%, #d3bac5 0%,#143887   100%);*/
+/*background: radial-gradient(134.34% 134.34% at 50% 0%,#501f50 0%,#1b041b 100%);/*134.34% 134.34% at 50% 0%,#501f50 0%,#080208 100%);*/
+background: radial-gradient(134.34% 134.34% at 50% 0%,#815181 0%,#551c55   100%);
+}
+.LevelOne-Rules:hover{
+  background: radial-gradient(134.34% 134.34% at 50% 0%,#460146 0%,#000000 100%);
+
+}
+
+
+.title ul{
+  font-family: "Barlow Semi Condensed", sans-serif;
+  list-style-type: none;
+    padding: 15px;
+    font-size: 35px;
+    line-height: 0.8;
+    margin: 2px 0 0;
+    color: #fff;
+    text-align: left;
+
+}
+.logo img{
+
+width: 150px;
+height: 150px;
+direction: right;
+}
+/*Seconed game rules */
+
+
+
+.LevelTwo-Rules{
+  border-radius :45px;
+  width: 570px;
+  max-width: 100%;
+  height:  180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+   margin-top: 3.5%;
+   cursor: pointer;
+   background: radial-gradient(134.34% 134.34% at 50% 0%,#815181 0%,#551c55   100%);
+   
+}
+.LevelTwo-Rules:hover{
+  background: radial-gradient(134.34% 134.34% at 50% 0%,#460146 0%,#000000 100%);
+
+}
+
+  .LevelTwo-title ul{
+    font-family: "Barlow Semi Condensed", sans-serif;
+    list-style-type: none;
+      padding: 15px;
+      font-size: 35px;
+      line-height: 0.8;
+      letter-spacing: 0px;
+      text-transform:uppercase ;
+     
+      color: #fff;
+      text-align: left;
+
+  
+  }
+  .LevelTwo-logo img{
+  
+
+  width: 180px;
+  height: 150px;
+  direction: right;
+  }
+
+ /* #btnMusic{
+   
+width:70px;
+height: 50px;
+border-radius: 60%;
+cursor: pointer;
+background: radial-gradient(134.34% 134.34% at 50% 0%,#501f50 0%,#662461 100%);
+margin-left: 1480px;
+margin-top: 60px; 
+justify-content: center;
+  }
+  #btnMusic:hover{
+    background: radial-gradient(134.34% 134.34% at 50% 0%,#501f50 0%,#471843 100%);
+  }
+  #btnMusic img{
+width:40px;
+}
+*/
+
+
+/*////////////////////////SECONED PAGE///////////////////////////////
+/////////////////////////SECONED PAGE///////////////////////////////
+////////////////////////SECONED PAGE/////////////////////////////////
+///////////////////////SECONED PAGE /////////////////////////////
+///////////////////////SECONED PAGE//////////////////////////////
+//////////////////////SECONED PAGE//////////////////////////////
+///////////////////////SECONED PAGE///////////////////////////
+////////////////////////SECONED PAGE////////////////////////*/
+
+
+ .FirstLevel{
+  /*border: 4px solid #d1a0f1;*/
+border-radius :45px;
+width: 570px;
+max-width: 100%;
+height:  180px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 25px;
+margin-top: 4.5%;
+cursor: pointer;
+/*background: radial-gradient(134.34% 134.34% at 50% 0%, #d3bac5 0%,#143887   100%);*/
+/*background: radial-gradient(134.34% 134.34% at 50% 0%,#501f50 0%,#1b041b 100%);/*134.34% 134.34% at 50% 0%,#501f50 0%,#080208 100%);*/
+background: radial-gradient(134.34% 134.34% at 50% 0%,#815181 0%,#551c55   100%);
+}
+.FirstLevel:hover{
+  background: radial-gradient(134.34% 134.34% at 50% 0%,#460146 0%,#000000 100%);
+
+}
+
+.title-block ul{
+  padding: 15px;
+ 
+  list-style-type: none;
+  font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 35px;
+    line-height: 0.8;
+    letter-spacing: 0px;
+    text-transform:uppercase ;
+    text-align: left;
+    color: #fff;
+    margin: 2px 0 0;
+}
+
+
+
+
+.game-pic{
+width: 190px;
+display: flex;
+flex-wrap: wrap; /* to put the third ball down int the bottom*/
+justify-content: center;
+align-items: center;
+height: 153px;
+position: relative; /* to center the traiangle*/
+
+}
+.game-pic::before{
+  background-image:url(./images/triangle1.svg);
+  content:'';
+  background-size:cover;
+  position: absolute;
+  top: 18%;
+  width: 60%;
+  height: 70%;
+  
+ 
+}
+
+.game-pic img{
+border: none;
+width: 50%;
+margin-top: 25%;
+
+}
+.Rock img{
+  width: 62%;
+
+}
+.Scissors img{
+width: 55%;
+}
+.Scissors{
+  border: none;
+  position: relative;
+  background:linear-gradient(to bottom,hsl(230,89%,62%),hsl(230,89%,65%)) ;   
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin-right: 50px;
+  
+}
+.Paper{
+  border: none;
+  background:linear-gradient(to bottom,hsl(39,89%,49%),hsl(40,84%,53%)) ;   
+  position: relative;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+.Rock{
+  border: none;
+  position: relative;
+  background:linear-gradient(to bottom,hsl(349,71%,52%),hsl(349,70%,56%)) ;   
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin-top:50px ;
+  
+}
+.wrapper {
+border: none;
+ width: 40px;
+ background-color: #fff;
+ display: inline-block;
+ justify-content: center;
+ border-radius: 50%;
+ margin-top:6px ;
+}
+
+
+/*************************************/
+/***************************************/
+/******SECONED LEVEL OF THE GAME ******/
+/*************************************/
+/*************************************/
+
+
+.SeconedLevel{
+border-radius :50px;
+width: 570px;
+max-width: 100%;
+height:  180px;
+display: flex;
+padding: 25px;
+justify-content: space-between;
+align-items: center;
+ margin-top: 3%;
+ cursor: pointer;
+ background: radial-gradient(134.34% 134.34% at 50% 0%,#815181 0%,#551c55   100%);
+  }
+
+.SeconedLevel:hover{
+    background: radial-gradient(134.34% 134.34% at 50% 0%,#460146 0%,#000000 100%);
+}
+
+  .title-block2 ul{
+    font-family: "Barlow Semi Condensed", sans-serif;
+    text-align: left;
+    list-style-type: none;
+     margin-left:20px;
+      font-size: 35px;
+      line-height: 0.8;
+      letter-spacing: 0px;
+      text-transform:uppercase ;
+      color: #fff;
+  }
+  .game-pic2{
+height: 140px;
+width: 180px;
+justify-content: center;
+align-items: center;
+display: flex;/* to put the third ball down in the bottom*/
+justify-content: center;
+position: relative; /* to center the traiangle*/
+}
+
+.game-pic2::before{
+  background-image: url(./images/bg-pentagon.svg);
+  background-repeat: no-repeat;
+  content: '';
+  background-size:cover;
+  position: absolute;
+  width: 80%;
+  height: 140px;
+  top: 7px;
+  left: 15px;
+  bottom: 25px;
+  max-height: 100%;
+
+
+}
+
+.Scissor{
+position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 100px;
+
+}
+.Scissor img{
+  width: 50px;
+  height: 50px;
+}
+
+.Paper1{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: 2px;
+  bottom: 60px;
+
+}
+.Paper1 img{
+  width: 50px;
+  height: 50px;
+
+}
+.Rock1{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 1px;
+  right: 20px;
+  top: 103px;
+}
+.Rock1 img{
+  width: 50px;
+  height: 50px;
+ 
+}
+.Spock{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+ border: none;
+left: 2px;
+bottom: 60px;
+background:#2CEBC8 ;   
+  border-radius: 50%;
+ 
+}
+.Spock img{
+  margin-top: 7px;
+  height: 22px;
+  width: 22px;
+ margin-left: 5px;
+ padding-top: 3px;
+ padding-right: 2px;
+}
+.FirstWrapper{
+  border: none;
+ width: 40px;
+ height: 38px;
+ background-color: #fff;
+ display: inline-block;
+ justify-content: center;
+ border-radius: 50%;
+ margin-top:6px ;
+}
+.Lizard{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+ border: none;
+  background:#994DE6  ;   
+  border-radius: 50%;
+  left: 20px;
+bottom: 1px;
+top: 103px;
+ 
+}
+.Lizard img{
+  margin-top: 7px;
+  height: 22px;
+  width: 22px;
+ margin-left: 5px;
+ padding-top: 3px;
+ padding-right: 2px;
+}
+.SeconedWrapper{
+  border: none;
+ width: 40px;
+ height: 38px;
+ background-color: #fff;
+ display: inline-block;
+ justify-content: center;
+ border-radius: 50%;
+ margin-top:6px ;
+
+}
+#Prev1{
+  position: relative;
+  width: 30px;
+  height: 30px;
+  max-width: 100%;
+  top:80%;
+  right: 40%;
+  border-radius: 20px;
+  background: #000000;
+  
+}
+#Prev{
+  position: relative;
+  width: 30px;
+  height: 30px;
+  max-width: 100%;
+  top:80%;
+  right: 40%;
+  border-radius: 20px;
+  background: #000000;
+  
+}
+.GetBack{
+  position: absolute;
+  width: 85px;
+  height: 50px;
+  background: radial-gradient(134.34% 134.34% at 50% 0%,#815181 0%,#551c55   100%);
+  transform:translate(-50%,-50%);
+  margin: 0 0px;
+    left: 40px;
+ cursor: pointer;
+ border-radius: 20px;
+
+}
+.GetBack li{
+  list-style: none;
+  width: 85px;
+  height: 50px;
+  border-radius: 20px;
+  margin: 0 0px;
+  transition: .5s;
+}
+.GetBack li:hover{
+  background: radial-gradient(134.34% 134.34% at 50% 0%,#460146 0%,#000000 100%);
+}
+.GetBack li span{
+  position: absolute;
+  width: 20px;
+  height:20px ;
+  border: 4px solid #fff;
+  transition: .5s;
+
+}
+.GetBack li.prev span{
+  top: 50%;
+  left: 40%;
+  transform: translateY(-50%)rotate(-45deg);
+  border-right: none;
+  border-bottom: none;
+  
+
+}
+.GetBack li.prev:hover span{
+ left: 16%;
+  
+
+}
+.GetBack li.prev span:before{
+  content: '';
+  position: absolute;
+  width: 38px;
+  height: 4px;
+  background: #fff;
+  transform-origin:left ;
+  transform: rotate(45deg)translate(-10px,4px)scaleX(1);
+  transition:.5s ;
+
+}
+.GetBack li.prev:hover span:before{
+  transform: rotate(45deg)translate(-10px,4px)scaleX(1);
+
+}
+@media (max-width:500px){
+    .GetBack li.prev:hover span{
+        left: 25%;
+    }
+}
