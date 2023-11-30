@@ -1,0 +1,92 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #734279;
+    color: #fff;
+}
+h1{
+    text-align: center;
+    font-size: 4rem;
+    padding-top: 50px;
+/*background-image: linear-gradient(to top,#734279, rgba(182, 115, 199, 0.7));*/
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 20px;
+    background: linear-gradient(rgba(114, 57, 138, 0.7), rgba(204, 131, 223, 0.7));
+    box-shadow: 0 8px 32px 0 rgba(110, 97, 112, 0.7);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(114, 57, 138, 0.7);
+    border-bottom: 3px solid #fff;
+}
+i{
+    font-size: 24px;
+    margin: 8px;
+}
+i:hover{
+    font-size: 28px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+p{
+    font-size: 22px;
+    margin: 8px;
+}
+.fa-face-frown{
+    color: yellow;
+}
+.fa-star,.fa-trash-can{
+    opacity: 0.4;
+}
+.fa-star:hover{
+    color: orange;
+    opacity: 1;
+}
+.fa-trash-can{
+    margin-right: 10px;
+}
+.fa-trash-can:hover{
+    color: rgb(255,242,217);
+    opacity: 1;
+}
+h2{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+form{
+    text-align: center;
+}
+input{
+    padding: 12px 20px;
+    border-radius: 8px;
+    width: 35vw;
+    font-size: 20px;
+    background-color: #e1d6e4;
+    background-color: #e1d6e4;
+    text-align: center;
+}
+button{all: unset;}
+.fa-upload{
+    margin-left: 20px;
+    font-size: 33px;
+   position: relative;
+   top: 10px;
+}
+.fa-upload:hover{
+    font-size: 36px;
+    color: rgb(111, 175, 111);
+}

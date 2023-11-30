@@ -1,0 +1,113 @@
+.container {
+    max-width: 960px;
+  }
+  
+  /*
+   * Custom translucent site header
+   */
+  .navbar .navbar-nav .nav-link.active,
+  .navbar .navbar-nav .nav-link:focus,
+  .navbar .navbar-nav .nav-link:hover{
+    color: #fff !important;
+  }
+  .navbar{
+    background-color: rgba(0, 0, 0, .85) !important;
+  }
+.btn{
+  border: 1px solid #999 ;
+  color: #999;
+}
+.Punny{
+height: 50vh;
+}
+.main-product-device{
+  width: 400px;
+  height: 200px;
+  background-color: white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.main-product-device-black{
+  background-color: #333;
+}
+.hl1{
+color: white;
+background-color:#333;
+}
+.hl2{
+  background-color: #fcf8f8;
+}
+.hl4{
+  color: white;
+  background-color: rgb(88, 88, 238);
+}
+.hl5{
+  background-color:#dbd2d2;
+}
+  /*
+   * Dummy devices (replace them with your own or something else entirely!)
+   */
+  
+  .product-device {
+    position: absolute;
+    right: 10%;
+    bottom: -30%;
+    width: 200px;
+    height: 400px;
+    background-color: #333;
+    border-radius: 21px;
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+  }
+  .product-device::before {
+    position: absolute;
+    top: 10%;
+    right: 10px;
+    bottom: 10%;
+    left: 10px;
+    content: "";
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 5px;
+  }
+  
+  .product-device-2 {
+    top: -25%;
+    right: auto;
+    bottom: 0;
+    left: 5%;
+    background-color: #e5e5e5;
+  }
+  
+  .navbar .navbar-toggler{
+    color: white;
+    font-size: 22px;
+    border-color: white;
+  }
+  .no-numbers {
+    list-style-type: none;
+  }
+  /*
+   * Extra utilities
+   */
+  
+  .border-top { border-top: 1px solid #e5e5e5; }
+  .border-bottom { border-bottom: 1px solid #e5e5e5; }
+  
+  .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+  
+  .flex-equal > * {
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    flex: 1;
+  }
+  @media (min-width: 768px) {
+    .flex-md-equal > * {
+      -ms-flex: 1;
+      -webkit-box-flex: 1;
+      flex: 1;
+    }
+  }
+  
+  .overflow-hidden { overflow: hidden; }

@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Dancing+Script&display=swap');
+/*global*/
+*{
+    margin: 0;
+}
+img{
+    width: 100%;
+}
+.clrfix{
+    clear: both;
+}
+/*start div header*/
+.header{
+    background-image: url(../img/shutterstock_277750193.jpg);
+    height: 100vh;
+    color: white;
+    background-size: cover;
+    overflow: hidden;
+}
+.navbar{
+    position: fixed;
+    width: 80%;
+}
+.header .container{
+    width: 80%;
+    margin: auto;
+}
+.logo{
+    float: left;
+}
+.links{
+    float: right;
+}
+ul{
+    list-style-type: none;
+}
+.logo img{
+    width: 150px;
+}
+.links li{
+    float: left;
+}
+.links li a{
+    color: white;
+}
+.links li a.active{
+      color: white;  
+}
+.header h1{
+    font-family:"Alegreya", serif;
+    font-size: 76px;
+    font-weight: 400;    
+    line-height: normal;  
+    color: rgb(255, 255, 255);
+}
+.header p{
+    font-family: "Dancing Script", cursive;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: normal;
+    color: rgb(255, 255, 255);
+}
+.header-content{
+    text-align: center;
+    margin-top: 150px;
+}
+.header a{
+padding: 20px 30px;
+text-decoration: none;
+margin-top: 20px;
+display: inline-block;
+font-weight: 900;
+border-radius: 10px;
+border: none;
+}
+.btn-learn{
+    font-size: 20px;
+    background-color: #c1ab84;
+    color: white;
+    margin-right: 5px;
+}
+.btn-book{
+    font-size: 20px;
+    background-color:white;
+    color: black ;
+    margin-right: 5px;
+}
+.header .header-content img{
+    width: 25%;
+}
+
+/* start div about*/
+.about{
+    padding: 50px;
+}
+.img-about{
+float: left;
+width: 50%;
+}
+
+.info-about{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.about .container{
+    width: 75%;
+    margin: auto;
+}
+.info-about h3{
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: 400;
+    font-family: 'Dancing Script', cursive;
+    color: #c1ab84;
+    margin-bottom: 20px;
+}
+.info-about p{
+    width: 75%;
+    margin: auto;
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 33px;
+    color: #686868;
+}
+.info-about ul li{
+    text-align: left;
+}
+.info-about ul li i{
+background-color: #c1ab84;
+color: white;
+padding: 15px;
+border-radius: 50%;
+margin-right: 20px;
+margin-bottom: 20px;
+}
+/* end div about*/
+
+/* start div menu*/
+.item{
+    float: left;
+    width: 33.33%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.items img{
+    width: 100%;
+}
+.menu{
+   
+}
+.menu .container{
+    width: 80%;
+    margin: auto;
+}
+.items{
+    text-align: center;
+}
+.items h2{
+    margin-bottom: 20px;
+}
+.items p{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 20px;
+    line-height: 22px;
+}
+.item h3{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.inner{
+    background-color: #f0ebeb;
+}
+/* end div menu*/

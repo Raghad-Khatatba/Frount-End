@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgba(0, 0, 0, .95);
+    cursor: pointer;
+}
+.container {
+    max-width: 960px;
+  }
+  img {
+    width: 100%;
+}
+a {
+    text-decoration: none;
+}
+h1 {
+    font-weight: 900 !important;
+}
+  .navbar .navbar-nav .nav-link.active,
+  .navbar .navbar-nav .nav-link:focus,
+  .navbar .navbar-nav .nav-link:hover{
+    border-bottom: 2px solid white !important;
+  }
+  .navbar{
+    background-color: rgba(0, 0, 0, .85) !important;
+  }
+    
+  .navbar .navbar-toggler{
+    color: white;
+    font-size: 22px;
+    border-color: white;
+  }
+.navbar img , footer img{
+    width: 150px;
+}
+/*end navbar*/
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    z-index: 2;
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    z-index: -1;
+}
+.bg-cover {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    transition: background-image 0.5s ease-in-out;
+}
+.hero-section p{
+    font-family: "Alegreya Sans";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 44.64px;
+    color: rgba(255, 255, 255, 0.92);
+}
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+} 
+.hero-section a{
+    padding: 17px 25px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    font-weight: 900;
+    border: none;
+    }
+    .hero-section a.btn-contact{
+       padding: 15px 25px;
+        border: 2px solid white;
+    }
+.button{
+    margin-top: 20px;
+}
+.btn-lear{
+    font-size: 15px;
+    background-color: #8e7754;
+    color: white;
+    margin-right: 5px;
+}
+.btn-contact{
+    font-size: 15px;
+    background: none;
+    color: white;
+    margin-right: 5px;
+}
+/*end section hero*/
+
+.section-intro .divider {
+    height: 4px;
+    width: 120px;
+    background: linear-gradient(to right,#f5a87c, #f4f0f5);;
+    margin: 16px auto;
+}
+.Food{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: white;
+height: 250px;
+}
+.Food .divider ,.contest .divider {
+    height: 4px;
+    width: 120px;
+    background: linear-gradient(to right,#131213, #f4f0f5);;
+    margin: 16px auto;
+}
+.border1{
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 90%;
+}
+.x :hover{
+    background-color: #131213;
+    color: white;
+    border-color: white;
+}
+/*end section food*/
+
+.resume{
+    background-image: url(../img/footer-back.jpg);
+    height: 350px;
+    background-size: cover;
+
+}
+.contest{
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: white;
+    width: 220px;
+    height: 260px;
+}
+
+/*end resum*/
+
+.News1{
+    border-radius: 20px;
+    border: 1px solid white;
+}
+.News2{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+}
+ /*end news*/
+
+ footer {
+    color: #fff;
+    border-top: 1px solid white;
+}
+
+footer a {
+    color: #fff;
+}
+ footer{
+    padding: 40px;
+}
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.navbar-brand {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.navbar-brand .dot {
+    color: var(--brand);
+}
+footer .navbar-brand {
+    color: #fff;
+}
+
+footer p {
+    color: #ADB3B9;
+}
+
+footer .social-icons a {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.social-icons a {
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.25);
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+}
+
+.social-icons a:hover {
+    background-color: #fff;
+    color: black;
+}
+/*end footer*/
