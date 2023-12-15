@@ -1,0 +1,117 @@
+
+main.flex{
+    gap: 1rem;
+    align-items: start;
+}
+.card{
+    cursor: pointer;
+    border: 1px solid rgba(93,188,252,0.3);
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(255,255,255,0.05),rgba(255,255,255,0.05));
+}
+.card:hover{
+    border: 1px solid var(--blue);
+    rotate: 1deg;
+    scale: 1.01;
+}
+/*left section*/
+.card img{
+    border-radius: 10px 10px 0 0;
+}
+section.leftSection{
+    flex-direction: column;
+    gap: 10px;
+}
+section.leftSection button{
+    background-color: rgba(36,37,46,1);
+    width: 11rem;
+    padding: 0.75rem 0;
+    text-align: center;
+    font-size: 1.05rem;
+    text-transform: capitalize;
+    opacity: 0.5;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+section.leftSection button:hover{
+    opacity: 1;
+}
+section.leftSection button.active{
+opacity: 1;
+font-weight: bold;
+letter-spacing: 0.6px;
+padding: 0.8rem 0;
+border: 1px solid var(--blue);
+}
+
+/*right section*/
+section.rightSection{
+flex-grow: 1;
+flex-wrap: wrap;
+justify-content: center;
+column-gap: 16px;
+row-gap: 2rem;
+}
+.card .box{
+    padding: 1rem 0.4rem;
+}
+.card .box .title{
+    color: var(--title);
+    text-transform: capitalize;
+}
+.card .box .supTitle{
+    color: var(--subtitle);
+    font-size: 0.8rem;
+margin-top: 0.7rem;
+margin-bottom: 1.1rem;
+}
+.icons i{
+    color: var(--subtitle);
+    font-size: 1.2rem;
+}
+.icons{
+    justify-content: space-between;
+}
+.more{
+    display: flex;
+    color: var(--blue);
+
+}
+.more span i{
+    color: var(--blue);
+}
+.more span{
+    margin-left: 12px;
+    font-size: 0.9rem;
+    align-self: flex-end;
+}
+.icons a i:hover{
+    font-size: 1.25rem;
+    color: var(--icon-hover);
+    cursor: pointer;
+}
+
+@media (max-width: 600PX){
+main.flex{
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: center;
+}
+section.leftSection{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+section.leftSection button{
+    background-color: rgba(36,37,46,1);
+    width: 7rem;
+    font-size: 0.9rem;
+}
+.box{
+    width: 280px;
+}
+img{
+    width: 280px;
+}
+}

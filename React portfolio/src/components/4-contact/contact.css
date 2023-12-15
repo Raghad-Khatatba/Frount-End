@@ -1,0 +1,88 @@
+section.countactUs i{
+color: var(--subtitle);
+margin-right: 1rem;
+font-size: 1.8rem;
+}
+section.countactUs .title{
+    font-size: 2.1rem;
+    color: var(--title);
+    margin-bottom: 1rem;
+}
+section.countactUs  .suptitle{
+color: var(--subtitle);
+margin-bottom: 2rem;
+line-height: 1.65rem;
+}
+section.countactUs label{
+    color: var(--subtitle);
+}
+section.countactUs #message{
+    min-height: 9rem;
+    resize: vertical;
+}
+section.countactUs .submet{
+    background-color: rgba(36,37,46,1);
+    padding: 0.75rem 1.9rem;
+    text-align: center;
+    font-size: 1.05rem;
+    text-transform: capitalize;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin: 1.8rem;
+    border: 1px solid rgb(97, 95, 95);
+}
+section.countactUs .submet:hover{
+    scale: 0.97;
+}
+section.countactUs #email,section.countactUs #message{
+all: unset;
+background-color: rgba(63,63,70,0.15);
+border: 1px solid rgba(63,63,70);
+width: 16rem;
+padding: 0.5rem 1rem;
+margin-left: 1rem;
+border-radius: 5px;
+transition: 0.3s;
+font-size: 1.1rem;
+}
+
+section.countactUs #email:focus,section.countactUs #message:focus{
+    border: 1px solid rgb(99, 238, 99);
+}
+section.countactUs #email:hover,section.countactUs #message:hover{
+    border: 1px solid rgb(99, 238, 99);
+}
+.light section.countactUs #email,.light section.countactUs #message{
+    background-color: #fff;
+    color: rgb(37, 36, 36);
+}
+@media (max-width: 600PX){
+form{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+form div.flex{
+    flex-direction: column;
+    align-items: start;
+}
+.animation{
+    display: none;
+}
+section.countactUs #email,section.countactUs #message{
+width: 100%;
+margin-left: 0;
+padding: 0.7rem 0;
+margin-top: 1rem;
+}
+section.countactUs .submet{
+width: 30%;
+align-self: center;
+}
+@media (max-width: 1200) {
+    .contactAnimation{
+        display: none;
+    }
+}
+    
+}
